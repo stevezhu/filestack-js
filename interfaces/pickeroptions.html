@@ -1167,7 +1167,7 @@ img { max-width: 100%; }
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Container where picker should be appended.</p>
+						<p>Container where picker should be appended. Only relevant for <code>inline</code> and <code>dropPane</code> display modes.</p>
 					</div>
 				</div>
 			</section>
@@ -1713,13 +1713,17 @@ onFileSelected(file) {
 				<div class="tsd-signature tsd-kind-icon">root<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L399">lib/picker.ts:399</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L404">lib/picker.ts:404</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Define a unique id for the application mount point. May be useful for more advanced use cases. For example, if you wish to have more than one picker instance open at once, then each will need their own unique rootId.</p>
+						<p>Define a unique id for the application mount point.
+							May be useful for more advanced use cases.
+							For example, if you wish to have more than one picker instance open at once,
+						then each will need their own unique rootId.</p>
 					</div>
+					<p><strong>Note:</strong> This option is ignored when <code>displayMode</code> is <code>dropPane</code>.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -1728,7 +1732,7 @@ onFileSelected(file) {
 				<div class="tsd-signature tsd-kind-icon">start<wbr>Uploading<wbr>When<wbr>Max<wbr>Files<wbr>Reached<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L403">lib/picker.ts:403</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L408">lib/picker.ts:408</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -1743,7 +1747,7 @@ onFileSelected(file) {
 				<div class="tsd-signature tsd-kind-icon">store<wbr>To<span class="tsd-signature-symbol">:</span> <a href="pickerstoreoptions.html" class="tsd-signature-type">PickerStoreOptions</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L407">lib/picker.ts:407</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L412">lib/picker.ts:412</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -1758,7 +1762,7 @@ onFileSelected(file) {
 				<div class="tsd-signature tsd-kind-icon">transformations<span class="tsd-signature-symbol">:</span> <a href="pickertransformationoptions.html" class="tsd-signature-type">PickerTransformationOptions</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L411">lib/picker.ts:411</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L416">lib/picker.ts:416</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -1773,7 +1777,7 @@ onFileSelected(file) {
 				<div class="tsd-signature tsd-kind-icon">upload<wbr>Config<span class="tsd-signature-symbol">:</span> <a href="uploadoptions.html" class="tsd-signature-type">UploadOptions</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L415">lib/picker.ts:415</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L420">lib/picker.ts:420</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -1788,7 +1792,7 @@ onFileSelected(file) {
 				<div class="tsd-signature tsd-kind-icon">upload<wbr>InBackground<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L419">lib/picker.ts:419</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L424">lib/picker.ts:424</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -1803,7 +1807,7 @@ onFileSelected(file) {
 				<div class="tsd-signature tsd-kind-icon">video<wbr>Resolution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L423">lib/picker.ts:423</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L428">lib/picker.ts:428</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
