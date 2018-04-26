@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EColorspaceType | filestack-js</title>
+	<title>PickerStoreOptions | filestack-js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -907,17 +907,23 @@ img { max-width: 100%; }
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class="current tsd-kind-enum">
-			<a href="ecolorspacetype.html" class="tsd-kind-icon">EColorspace<wbr>Type</a>
+		<li class="current tsd-kind-interface">
+			<a href="pickerstoreoptions.html" class="tsd-kind-icon">Picker<wbr>Store<wbr>Options</a>
 			<ul>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="ecolorspacetype.html#cmyk" class="tsd-kind-icon">CMYK</a>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="pickerstoreoptions.html#access" class="tsd-kind-icon">access</a>
 				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="ecolorspacetype.html#input" class="tsd-kind-icon">Input</a>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="pickerstoreoptions.html#container" class="tsd-kind-icon">container</a>
 				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="ecolorspacetype.html#rgb" class="tsd-kind-icon">RGB</a>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="pickerstoreoptions.html#location" class="tsd-kind-icon">location</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="pickerstoreoptions.html#path" class="tsd-kind-icon">path</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="pickerstoreoptions.html#region" class="tsd-kind-icon">region</a>
 				</li>
 			</ul>
 		</li>
@@ -925,59 +931,107 @@ img { max-width: 100%; }
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<section class="tsd-panel tsd-comment">
-			<div class="tsd-comment tsd-typography">
-				<div class="lead">
-					<p>Color space enum</p>
-				</div>
-			</div>
+		<section class="tsd-panel tsd-hierarchy">
+			<h3>Hierarchy</h3>
+			<ul class="tsd-hierarchy">
+				<li>
+					<span class="target">PickerStoreOptions</span>
+				</li>
+			</ul>
 		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Enumeration members</h3>
+						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="ecolorspacetype.html#cmyk" class="tsd-kind-icon">CMYK</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="ecolorspacetype.html#input" class="tsd-kind-icon">Input</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="ecolorspacetype.html#rgb" class="tsd-kind-icon">RGB</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pickerstoreoptions.html#access" class="tsd-kind-icon">access</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pickerstoreoptions.html#container" class="tsd-kind-icon">container</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pickerstoreoptions.html#location" class="tsd-kind-icon">location</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pickerstoreoptions.html#path" class="tsd-kind-icon">path</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pickerstoreoptions.html#region" class="tsd-kind-icon">region</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Enumeration members</h2>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="cmyk" class="tsd-anchor"></a>
-				<h3>CMYK</h3>
-				<div class="tsd-signature tsd-kind-icon">CMYK<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;CMYK&quot;</span></div>
+			<h2>Properties</h2>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="access" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> access</h3>
+				<div class="tsd-signature tsd-kind-icon">access<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/api/transform.ts#L116">lib/api/transform.ts:116</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L203">lib/picker.ts:203</a></li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>S3 container access. &#39;public&#39; or &#39;private&#39;.</p>
+					</div>
+				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="input" class="tsd-anchor"></a>
-				<h3>Input</h3>
-				<div class="tsd-signature tsd-kind-icon">Input<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;Input&quot;</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="container" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> container</h3>
+				<div class="tsd-signature tsd-kind-icon">container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/api/transform.ts#L117">lib/api/transform.ts:117</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L191">lib/picker.ts:191</a></li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Specify storage container.</p>
+					</div>
+				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="rgb" class="tsd-anchor"></a>
-				<h3>RGB</h3>
-				<div class="tsd-signature tsd-kind-icon">RGB<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;RGB&quot;</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="location" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> location</h3>
+				<div class="tsd-signature tsd-kind-icon">location<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/api/transform.ts#L115">lib/api/transform.ts:115</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L187">lib/picker.ts:187</a></li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Location for stored file. One of &#39;s3&#39;, &#39;gcs&#39;, &#39;azure&#39;, &#39;rackspace&#39;, or &#39;dropbox&#39;.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="path" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> path</h3>
+				<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L195">lib/picker.ts:195</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Set container path. Indicate a folder by adding a trailing slash. Without a trailing slash all files will be stored to the same object.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="region" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> region</h3>
+				<div class="tsd-signature tsd-kind-icon">region<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/046a76a/src/lib/picker.ts#L199">lib/picker.ts:199</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Specify S3 region.</p>
+					</div>
+				</div>
 			</section>
 		</section>
 		<footer>
