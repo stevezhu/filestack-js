@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ClientOptions | filestack-js</title>
+	<title>WorkflowConfig | filestack-js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -908,16 +908,10 @@ img { max-width: 100%; }
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class="current tsd-kind-interface">
-			<a href="clientoptions.html" class="tsd-kind-icon">Client<wbr>Options</a>
+			<a href="workflowconfig.html" class="tsd-kind-icon">Workflow<wbr>Config</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="clientoptions.html#cname" class="tsd-kind-icon">cname</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="clientoptions.html#security" class="tsd-kind-icon">security</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="clientoptions.html#sessioncache" class="tsd-kind-icon">session<wbr>Cache</a>
+					<a href="workflowconfig.html#id" class="tsd-kind-icon">id</a>
 				</li>
 			</ul>
 		</li>
@@ -929,13 +923,9 @@ img { max-width: 100%; }
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<span class="target">ClientOptions</span>
+					<span class="target">WorkflowConfig</span>
 				</li>
 			</ul>
-		</section>
-		<section class="tsd-panel tsd-kind-interface">
-			<h3 class="tsd-before-signature">Indexable</h3>
-			<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>option: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
 		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
@@ -944,9 +934,7 @@ img { max-width: 100%; }
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="clientoptions.html#cname" class="tsd-kind-icon">cname</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="clientoptions.html#security" class="tsd-kind-icon">security</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="clientoptions.html#sessioncache" class="tsd-kind-icon">session<wbr>Cache</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="workflowconfig.html#id" class="tsd-kind-icon">id</a></li>
 						</ul>
 					</section>
 				</div>
@@ -955,56 +943,14 @@ img { max-width: 100%; }
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="cname" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> cname</h3>
-				<div class="tsd-signature tsd-kind-icon">cname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<a name="id" class="tsd-anchor"></a>
+				<h3>id</h3>
+				<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/1dc09e8/src/lib/client.ts#L94">lib/client.ts:94</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/1dc09e8/src/lib/client.ts#L45">lib/client.ts:45</a></li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Domain to use for all URLs. <strong>Requires the custom CNAME addon</strong>.
-							If this is enabled then you must also set up your own OAuth applications
-						for each cloud source you wish to use in the picker.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="security" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> security</h3>
-				<div class="tsd-signature tsd-kind-icon">security<span class="tsd-signature-symbol">:</span> <a href="security.html" class="tsd-signature-type">Security</a></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/1dc09e8/src/lib/client.ts#L88">lib/client.ts:88</a></li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Security object with policy and signature keys.
-							Can be used to limit client capabilities and protect public URLs.
-							It is intended to be used with server-side policy and signature generation.
-						Read about <a href="https://www.filestack.com/docs/concepts/security">security policies</a>.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="sessioncache" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> session<wbr>Cache</h3>
-				<div class="tsd-signature tsd-kind-icon">session<wbr>Cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/1dc09e8/src/lib/client.ts#L100">lib/client.ts:100</a></li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Enable/disable caching of the cloud session token. Default is false.
-							This ensures that users will be remembered on your domain when calling the cloud API from the browser.
-						Please be aware that tokens stored in localStorage are accessible by other scripts on the same domain.</p>
-					</div>
-				</div>
 			</section>
 		</section>
 		<footer>
