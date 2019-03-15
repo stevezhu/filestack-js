@@ -958,14 +958,12 @@ img { max-width: 100%; }
 					<p>The Filestack client, the entry point for all public methods. Encapsulates session information.</p>
 				</div>
 				<h3 id="example">Example</h3>
-				<pre><code class="lang-js"><span class="hljs-comment">// ES module</span>
+				<pre><code class="language-js"><span class="hljs-comment">// ES module</span>
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> filestack <span class="hljs-keyword">from</span> <span class="hljs-string">'filestack-js'</span>;
-<span class="hljs-keyword">const</span> client = filestack.init(<span class="hljs-string">'apikey'</span>);
-</code></pre>
-				<pre><code class="lang-js"><span class="hljs-comment">// UMD module in browser</span>
+<span class="hljs-keyword">const</span> client = filestack.init(<span class="hljs-string">'apikey'</span>);</code></pre>
+				<pre><code class="language-js"><span class="hljs-comment">// UMD module in browser</span>
 &lt;script src=<span class="hljs-string">"https://static.filestackapi.com/filestack-js/1.x.x/filestack.min.js"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
-<span class="hljs-keyword">const</span> client = filestack.init(<span class="hljs-string">'apikey'</span>);
-</code></pre>
+<span class="hljs-keyword">const</span> client = filestack.init(<span class="hljs-string">'apikey'</span>);</code></pre>
 			</div>
 		</section>
 		<section class="tsd-panel tsd-hierarchy">
@@ -1022,7 +1020,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/8b69edd/src/lib/client.ts#L122">lib/client.ts:122</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/000af44/src/lib/client.ts#L122">lib/client.ts:122</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1047,7 +1045,7 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">session<span class="tsd-signature-symbol">:</span> <a href="../interfaces/session.html" class="tsd-signature-type">Session</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/8b69edd/src/lib/client.ts#L121">lib/client.ts:121</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/000af44/src/lib/client.ts#L121">lib/client.ts:121</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1064,7 +1062,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/8b69edd/src/lib/client.ts#L157">lib/client.ts:157</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/000af44/src/lib/client.ts#L157">lib/client.ts:157</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1097,7 +1095,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/8b69edd/src/lib/client.ts#L180">lib/client.ts:180</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/000af44/src/lib/client.ts#L180">lib/client.ts:180</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1105,15 +1103,14 @@ img { max-width: 100%; }
 								<p>Retrieve detailed data of stored files.</p>
 							</div>
 							<h3 id="example">Example</h3>
-							<pre><code class="lang-js">client
+							<pre><code class="language-js">client
   .metadata(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>)
   .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(res);
   })
   .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(err);
-  }));
-</code></pre>
+  }));</code></pre>
 							<dl class="tsd-comment-tags">
 								<dt>see</dt>
 								<dd><p><a href="https://www.filestack.com/docs/api/file#metadata">File API - Metadata</a>.</p>
@@ -1155,7 +1152,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/8b69edd/src/lib/client.ts#L187">lib/client.ts:187</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/000af44/src/lib/client.ts#L187">lib/client.ts:187</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1183,7 +1180,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/8b69edd/src/lib/client.ts#L205">lib/client.ts:205</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/000af44/src/lib/client.ts#L205">lib/client.ts:205</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1192,10 +1189,9 @@ img { max-width: 100%; }
 								Opens document viewer in new window if id option is not provided.</p>
 							</div>
 							<h3 id="example">Example</h3>
-							<pre><code class="lang-js"><span class="hljs-comment">// &lt;div id="preview"&gt;&lt;/div&gt;</span>
+							<pre><code class="language-js"><span class="hljs-comment">// &lt;div id="preview"&gt;&lt;/div&gt;</span>
 
-client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span class="hljs-attr">id</span>: <span class="hljs-string">'preview'</span> });
-</code></pre>
+client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span class="hljs-attr">id</span>: <span class="hljs-string">'preview'</span> });</code></pre>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
@@ -1229,7 +1225,7 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/8b69edd/src/lib/client.ts#L230">lib/client.ts:230</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/000af44/src/lib/client.ts#L230">lib/client.ts:230</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1238,15 +1234,14 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 							</div>
 							<p><strong>Requires a valid security policy and signature</strong>. The policy and signature will be pulled from the client session, or it can be overridden with the security parameter.</p>
 							<h3 id="example">Example</h3>
-							<pre><code class="lang-js">client
+							<pre><code class="language-js">client
   .remove(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>)
   .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(res);
   })
   .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(err);
-  }));
-</code></pre>
+  }));</code></pre>
 							<dl class="tsd-comment-tags">
 								<dt>see</dt>
 								<dd><p><a href="https://www.filestack.com/docs/api/file#delete">File API - Delete</a></p>
@@ -1282,7 +1277,7 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/8b69edd/src/lib/client.ts#L255">lib/client.ts:255</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/000af44/src/lib/client.ts#L255">lib/client.ts:255</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1291,15 +1286,14 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 							</div>
 							<p><strong>Requires a valid security policy and signature</strong>. The policy and signature will be pulled from the client session, or it can be overridden with the security parameter.</p>
 							<h3 id="example">Example</h3>
-							<pre><code class="lang-js">client
+							<pre><code class="language-js">client
   .removeMetadata(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>)
   .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(res);
   })
   .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(err);
-  }));
-</code></pre>
+  }));</code></pre>
 							<dl class="tsd-comment-tags">
 								<dt>see</dt>
 								<dd><p><a href="https://www.filestack.com/docs/api/file#delete">File API - Delete</a></p>
@@ -1335,7 +1329,7 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/8b69edd/src/lib/client.ts#L306">lib/client.ts:306</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/000af44/src/lib/client.ts#L306">lib/client.ts:306</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1347,14 +1341,13 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 								Otherwise file blob is returned
 							Metadata and head options cannot be mixed</p>
 							<h3 id="example">Example</h3>
-							<pre><code class="lang-js">client.retrieve(<span class="hljs-string">'fileHandle'</span>, {
+							<pre><code class="language-js">client.retrieve(<span class="hljs-string">'fileHandle'</span>, {
  <span class="hljs-attr">metadata</span>: <span class="hljs-literal">true</span>,
 }).then(<span class="hljs-function">(<span class="hljs-params">response</span>) =&gt;</span> {
  <span class="hljs-built_in">console</span>.log(response);
 }).catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
  <span class="hljs-built_in">console</span>.error(err);
-})
-</code></pre>
+})</code></pre>
 							<dl class="tsd-comment-tags">
 								<dt>see</dt>
 								<dd><p><a href="https://www.filestack.com/docs/api/file#download">File API - Download</a></p>
@@ -1399,7 +1392,7 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/8b69edd/src/lib/client.ts#L275">lib/client.ts:275</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/000af44/src/lib/client.ts#L275">lib/client.ts:275</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1407,10 +1400,9 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 								<p>Store a file from its URL.</p>
 							</div>
 							<h3 id="example">Example</h3>
-							<pre><code class="lang-js">client
+							<pre><code class="language-js">client
   .storeURL(<span class="hljs-string">'https://d1wtqaffaaj63z.cloudfront.net/images/NY_199_E_of_Hammertown_2014.jpg'</span>)
-  .then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(res));
-</code></pre>
+  .then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(res));</code></pre>
 							<dl class="tsd-comment-tags">
 								<dt>see</dt>
 								<dd><p><a href="https://www.filestack.com/docs/api/file#store">File API - Store</a></p>
@@ -1458,7 +1450,7 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/8b69edd/src/lib/client.ts#L344">lib/client.ts:344</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/000af44/src/lib/client.ts#L344">lib/client.ts:344</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1469,7 +1461,7 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 							</div>
 							<p>Transform params can be provided in camelCase or snakeCase style ie: partial_pixelate or partialPixelate</p>
 							<h3 id="example">Example</h3>
-							<pre><code class="lang-js"><span class="hljs-keyword">const</span> transformedUrl = client.transform(url, {
+							<pre><code class="language-js"><span class="hljs-keyword">const</span> transformedUrl = client.transform(url, {
   <span class="hljs-attr">crop</span>: {
     <span class="hljs-attr">dim</span>: [x, y, width, height],
   },
@@ -1484,8 +1476,7 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 };
 
 <span class="hljs-comment">// optionally store the new URL</span>
-client.storeURL(transformedUrl).then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(res));
-</code></pre>
+client.storeURL(transformedUrl).then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(res));</code></pre>
 							<dl class="tsd-comment-tags">
 								<dt>see</dt>
 								<dd><p><a href="https://www.filestack.com/docs/api/processing">Filestack Processing API</a></p>
@@ -1528,7 +1519,7 @@ client.storeURL(transformedUrl).then(<span class="hljs-function"><span class="hl
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/8b69edd/src/lib/client.ts#L378">lib/client.ts:378</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/000af44/src/lib/client.ts#L378">lib/client.ts:378</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1538,7 +1529,7 @@ client.storeURL(transformedUrl).then(<span class="hljs-function"><span class="hl
 							<p>In Node runtimes the file argument is treated as a file path.
 							Uploading from a Node buffer is not yet implemented.</p>
 							<h3 id="example">Example</h3>
-							<pre><code class="lang-js"><span class="hljs-keyword">const</span> token = {};
+							<pre><code class="language-js"><span class="hljs-keyword">const</span> token = {};
 <span class="hljs-keyword">const</span> onRetry = <span class="hljs-function">(<span class="hljs-params">obj</span>) =&gt;</span> {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Retrying <span class="hljs-subst">${obj.location}</span> for <span class="hljs-subst">${obj.filename}</span>. Attempt <span class="hljs-subst">${obj.attempt}</span> of 10.`</span>);
 };
@@ -1548,8 +1539,7 @@ client.upload(file, { onRetry }, { <span class="hljs-attr">filename</span>: <spa
 
 token.pause();  <span class="hljs-comment">// Pause flow</span>
 token.resume(); <span class="hljs-comment">// Resume flow</span>
-token.cancel(); <span class="hljs-comment">// Cancel flow (rejects)</span>
-</code></pre>
+token.cancel(); <span class="hljs-comment">// Cancel flow (rejects)</span></code></pre>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
