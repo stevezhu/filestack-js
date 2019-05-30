@@ -925,6 +925,9 @@ img { max-width: 100%; }
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a href="filestackerror.html#stack" class="tsd-kind-icon">stack</a>
 				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="filestackerror.html#type" class="tsd-kind-icon">type</a>
+				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a href="filestackerror.html#error" class="tsd-kind-icon">Error</a>
 				</li>
@@ -964,6 +967,7 @@ img { max-width: 100%; }
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="filestackerror.html#message" class="tsd-kind-icon">message</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="filestackerror.html#name" class="tsd-kind-icon">name</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="filestackerror.html#stack" class="tsd-kind-icon">stack</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="filestackerror.html#type" class="tsd-kind-icon">type</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="filestackerror.html#error" class="tsd-kind-icon">Error</a></li>
 						</ul>
 					</section>
@@ -976,22 +980,25 @@ img { max-width: 100%; }
 				<a name="constructor" class="tsd-anchor"></a>
 				<h3>constructor</h3>
 				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">new <wbr>Filestack<wbr>Error<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, details<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filestackerror.html" class="tsd-signature-type">FilestackError</a></li>
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Filestack<wbr>Error<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, details<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, type<span class="tsd-signature-symbol">?: </span><a href="../enums/filestackerrortype.html" class="tsd-signature-type">FilestackErrorType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filestackerror.html" class="tsd-signature-type">FilestackError</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/ce77599/src/FilestackError.ts#L26">FilestackError.ts:26</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/33dad61/src/filestack_error.ts#L33">filestack_error.ts:33</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>message: <span class="tsd-signature-type">string</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> message: <span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> details: <span class="tsd-signature-type">any</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> type: <a href="../enums/filestackerrortype.html" class="tsd-signature-type">FilestackErrorType</a></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <a href="filestackerror.html" class="tsd-signature-type">FilestackError</a></h4>
@@ -1007,7 +1014,7 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">details<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/ce77599/src/FilestackError.ts#L26">FilestackError.ts:26</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/33dad61/src/filestack_error.ts#L32">filestack_error.ts:32</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -1031,7 +1038,7 @@ img { max-width: 100%; }
 				<aside class="tsd-sources">
 					<p>Inherited from Error.message</p>
 					<ul>
-						<li>Defined in /Users/andrzej/workspace/filestack-js2/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:964</li>
+						<li>Defined in /Users/pcholuj/Documents/projects/filestack-js/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:964</li>
 					</ul>
 				</aside>
 			</section>
@@ -1042,7 +1049,7 @@ img { max-width: 100%; }
 				<aside class="tsd-sources">
 					<p>Inherited from Error.name</p>
 					<ul>
-						<li>Defined in /Users/andrzej/workspace/filestack-js2/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:963</li>
+						<li>Defined in /Users/pcholuj/Documents/projects/filestack-js/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:963</li>
 					</ul>
 				</aside>
 			</section>
@@ -1054,7 +1061,17 @@ img { max-width: 100%; }
 					<p>Inherited from Error.stack</p>
 					<p>Overrides Error.stack</p>
 					<ul>
-						<li>Defined in /Users/andrzej/workspace/filestack-js2/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:965</li>
+						<li>Defined in /Users/pcholuj/Documents/projects/filestack-js/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:965</li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="type" class="tsd-anchor"></a>
+				<h3>type</h3>
+				<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/33dad61/src/filestack_error.ts#L33">filestack_error.ts:33</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1064,7 +1081,7 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ErrorConstructor</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in /Users/andrzej/workspace/filestack-js2/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:974</li>
+						<li>Defined in /Users/pcholuj/Documents/projects/filestack-js/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:974</li>
 					</ul>
 				</aside>
 			</section>
