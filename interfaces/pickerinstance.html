@@ -2423,14 +2423,9 @@ img {
 				<div class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/picker.ts#L33">lib/picker.ts:33</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/picker.ts#L33">lib/picker.ts:33</a></li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Cancel picker uploads. This operation is idempotent.</p>
-					</div>
-				</div>
 				<div class="tsd-type-declaration">
 					<h4>Type declaration</h4>
 					<ul class="tsd-parameters">
@@ -2453,14 +2448,9 @@ img {
 				<div class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/picker.ts#L28">lib/picker.ts:28</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/picker.ts#L28">lib/picker.ts:28</a></li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Close picker. This operation is idempotent.</p>
-					</div>
-				</div>
 				<div class="tsd-type-declaration">
 					<h4>Type declaration</h4>
 					<ul class="tsd-parameters">
@@ -2483,34 +2473,9 @@ img {
 				<div class="tsd-signature tsd-kind-icon">crop<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/picker.ts#L65">lib/picker.ts:65</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/picker.ts#L65">lib/picker.ts:65</a></li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Specify a list of files to open in the picker for cropping</p>
-					</div>
-					<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-						<h3>Example</h3>
-					</a>
-					<pre><code class="language-js"><span class="hljs-comment">// &lt;input id="fileSelect" type="file"&gt;</span>
-
-<span class="hljs-keyword">const</span> inputEl = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'fileSelect'</span>);
-<span class="hljs-keyword">const</span> picker = client.picker({
-  <span class="hljs-attr">onUploadDone</span>: <span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(res),
-});
-
-inputEl.addEventListener(<span class="hljs-string">'change'</span>, (e) =&gt; {
-  picker.crop(e.target.files);
-});
-
-<span class="hljs-comment">// Or pass an array of URL strings</span>
-<span class="hljs-keyword">const</span> urls = [
-  <span class="hljs-string">'https://d1wtqaffaaj63z.cloudfront.net/images/fox_in_forest1.jpg'</span>,
-  <span class="hljs-string">'https://d1wtqaffaaj63z.cloudfront.net/images/sail.jpg'</span>,
-];
-picker.crop(urls);</code></pre>
-				</div>
 				<div class="tsd-type-declaration">
 					<h4>Type declaration</h4>
 					<ul class="tsd-parameters">
@@ -2539,14 +2504,9 @@ picker.crop(urls);</code></pre>
 				<div class="tsd-signature tsd-kind-icon">open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/picker.ts#L38">lib/picker.ts:38</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/picker.ts#L38">lib/picker.ts:38</a></li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Open picker. This operation is idempotent.</p>
-					</div>
-				</div>
 				<div class="tsd-type-declaration">
 					<h4>Type declaration</h4>
 					<ul class="tsd-parameters">

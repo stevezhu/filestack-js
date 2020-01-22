@@ -2562,29 +2562,6 @@ img {
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<section class="tsd-panel tsd-comment">
-			<div class="tsd-comment tsd-typography">
-				<div class="lead">
-					<p>Class for handling filelinks. For now its supports all filestack transforms.
-					It outputs transform url or array of transforms</p>
-				</div>
-				<dl class="tsd-comment-tags">
-					<dt>example</dt>
-					<dd><p>const link = new Filelink(&#39;handle or externalUrl&#39;, &#39;apikey&#39;);
-						link.flip().flop().store();</p>
-						<p>console.log(link.toString());
-							// enable base64 support
-						link.setBase64(true)</p>
-						<p>console.log(link.toString());</p>
-					</dd>
-					<dt>export</dt>
-					<dd></dd>
-					<dt>class</dt>
-					<dd><p>Filelink</p>
-					</dd>
-				</dl>
-			</div>
-		</section>
 		<section class="tsd-panel tsd-hierarchy">
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
@@ -2677,34 +2654,19 @@ img {
 				<a name="constructor" class="tsd-anchor"></a>
 				<h3>constructor</h3>
 				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">new <wbr>Filelink<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, apikey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filelink.html" class="tsd-signature-type">Filelink</a></li>
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Filelink<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, apikey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filelink.html" class="tsd-signature-type">Filelink</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L559">lib/filelink.ts:559</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L559">lib/filelink.ts:559</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Class for generating tranformation urls</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>source: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>handle or multiple handles (i.e. for collage)</p>
-									</div>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> apikey: <span class="tsd-signature-type">string</span></h5>
@@ -2721,28 +2683,15 @@ img {
 				<a name="pdfconvert" class="tsd-anchor"></a>
 				<h3>PDFConvert</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">PDFConvert<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/pdfconvertparams.html" class="tsd-signature-type">PdfConvertParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">PDFConvert<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/pdfconvertparams.html" class="tsd-signature-type">PdfConvertParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1286">lib/filelink.ts:1286</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1286">lib/filelink.ts:1286</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds pdfconvert transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#pdfconvert">https://www.filestack.com/docs/api/processing/#pdfconvert</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -2758,28 +2707,15 @@ img {
 				<a name="pdfinfo" class="tsd-anchor"></a>
 				<h3>PDFInfo</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">PDFInfo<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/pdfinfoparams.html" class="tsd-signature-type">PdfInfoParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">PDFInfo<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/pdfinfoparams.html" class="tsd-signature-type">PdfInfoParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1274">lib/filelink.ts:1274</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1274">lib/filelink.ts:1274</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds pdfinfo transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#pdfinfo">https://www.filestack.com/docs/api/processing/#pdfinfo</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -2795,28 +2731,15 @@ img {
 				<a name="urlscreenshot" class="tsd-anchor"></a>
 				<h3>URLScreenshot</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">URLScreenshot<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/urlscreenshotparams.html" class="tsd-signature-type">URLScreenshotParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">URLScreenshot<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/urlscreenshotparams.html" class="tsd-signature-type">URLScreenshotParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1262">lib/filelink.ts:1262</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1262">lib/filelink.ts:1262</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds URLScreenshot transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#urlscreenshot">https://www.filestack.com/docs/api/processing/#urlscreenshot</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -2832,25 +2755,15 @@ img {
 				<a name="addtask" class="tsd-anchor"></a>
 				<h3>add<wbr>Task</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">add<wbr>Task<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, params<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">add<wbr>Task<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L716">lib/filelink.ts:716</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L716">lib/filelink.ts:716</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Add task and validate</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -2874,22 +2787,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L866">lib/filelink.ts:866</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L866">lib/filelink.ts:866</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Add animate transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#animate-images-to-gif">https://www.filestack.com/docs/api/processing/#animate-images-to-gif</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -2905,28 +2805,15 @@ img {
 				<a name="ascii" class="tsd-anchor"></a>
 				<h3>ascii</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">ascii<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/asciiparams.html" class="tsd-signature-type">AsciiParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">ascii<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/asciiparams.html" class="tsd-signature-type">AsciiParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1202">lib/filelink.ts:1202</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1202">lib/filelink.ts:1202</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds ascii transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#ascii">https://www.filestack.com/docs/api/processing/#ascii</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -2948,22 +2835,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L755">lib/filelink.ts:755</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L755">lib/filelink.ts:755</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Add autoimage transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#auto-image-conversion">https://www.filestack.com/docs/api/processing/#auto-image-conversion</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						<p>this</p>
 					</li>
@@ -2973,28 +2847,15 @@ img {
 				<a name="blackwhite" class="tsd-anchor"></a>
 				<h3>blackwhite</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">blackwhite<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/blackwhiteparams.html" class="tsd-signature-type">BlackwhiteParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">blackwhite<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/blackwhiteparams.html" class="tsd-signature-type">BlackwhiteParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1094">lib/filelink.ts:1094</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1094">lib/filelink.ts:1094</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds blackwhite transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#blackwhite">https://www.filestack.com/docs/api/processing/#blackwhite</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3010,28 +2871,15 @@ img {
 				<a name="blur" class="tsd-anchor"></a>
 				<h3>blur</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">blur<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/blurparams.html" class="tsd-signature-type">BlurParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">blur<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/blurparams.html" class="tsd-signature-type">BlurParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1082">lib/filelink.ts:1082</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1082">lib/filelink.ts:1082</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds blur transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#blur">https://www.filestack.com/docs/api/processing/#blur</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3053,22 +2901,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L974">lib/filelink.ts:974</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L974">lib/filelink.ts:974</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds blur faces transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#blur-faces">https://www.filestack.com/docs/api/processing/#blur-faces</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3084,28 +2919,15 @@ img {
 				<a name="border" class="tsd-anchor"></a>
 				<h3>border</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">border<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/borderparams.html" class="tsd-signature-type">BorderParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">border<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/borderparams.html" class="tsd-signature-type">BorderParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1058">lib/filelink.ts:1058</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1058">lib/filelink.ts:1058</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds border transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#border">https://www.filestack.com/docs/api/processing/#border</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3127,22 +2949,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L890">lib/filelink.ts:890</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L890">lib/filelink.ts:890</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds cache transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#cache">https://www.filestack.com/docs/api/processing/#cache</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3158,28 +2967,15 @@ img {
 				<a name="circle" class="tsd-anchor"></a>
 				<h3>circle</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">circle<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/circleparams.html" class="tsd-signature-type">CircleParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">circle<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/circleparams.html" class="tsd-signature-type">CircleParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1046">lib/filelink.ts:1046</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1046">lib/filelink.ts:1046</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds circle transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#circle">https://www.filestack.com/docs/api/processing/#circle</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3201,22 +2997,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1178">lib/filelink.ts:1178</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1178">lib/filelink.ts:1178</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds collage transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#collage">https://www.filestack.com/docs/api/processing/#collage</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3232,28 +3015,15 @@ img {
 				<a name="compress" class="tsd-anchor"></a>
 				<h3>compress</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">compress<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/compressparams.html" class="tsd-signature-type">CompressParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">compress<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/compressparams.html" class="tsd-signature-type">CompressParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L821">lib/filelink.ts:821</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L821">lib/filelink.ts:821</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Add compress transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#compress">https://www.filestack.com/docs/api/processing/#compress</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3275,22 +3045,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L914">lib/filelink.ts:914</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L914">lib/filelink.ts:914</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds crop transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#crop">https://www.filestack.com/docs/api/processing/#crop</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3312,22 +3069,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L950">lib/filelink.ts:950</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L950">lib/filelink.ts:950</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds crop faces transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#crop-faces">https://www.filestack.com/docs/api/processing/#crop-faces</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3343,28 +3087,15 @@ img {
 				<a name="detectfaces" class="tsd-anchor"></a>
 				<h3>detect<wbr>Faces</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">detect<wbr>Faces<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/detectfacesparams.html" class="tsd-signature-type">DetectFacesParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">detect<wbr>Faces<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/detectfacesparams.html" class="tsd-signature-type">DetectFacesParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L938">lib/filelink.ts:938</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L938">lib/filelink.ts:938</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds detect_faces transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#facial-detection">https://www.filestack.com/docs/api/processing/#facial-detection</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3380,28 +3111,15 @@ img {
 				<a name="enhance" class="tsd-anchor"></a>
 				<h3>enhance</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">enhance<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/enhanceparams.html" class="tsd-signature-type">EnhanceParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">enhance<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/enhanceparams.html" class="tsd-signature-type">EnhanceParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L788">lib/filelink.ts:788</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L788">lib/filelink.ts:788</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds enhance transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#enhance">https://www.filestack.com/docs/api/processing/#enhance</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3423,22 +3141,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1298">lib/filelink.ts:1298</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1298">lib/filelink.ts:1298</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds fallback transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#fallback">https://www.filestack.com/docs/api/processing/#fallback</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3460,22 +3165,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L766">lib/filelink.ts:766</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L766">lib/filelink.ts:766</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds flip transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#flip">https://www.filestack.com/docs/api/processing/#flip</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						<p>this</p>
 					</li>
@@ -3491,22 +3183,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L777">lib/filelink.ts:777</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L777">lib/filelink.ts:777</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds flop transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#flop">https://www.filestack.com/docs/api/processing/#flop</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						<p>this</p>
 					</li>
@@ -3522,19 +3201,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L653">lib/filelink.ts:653</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L653">lib/filelink.ts:653</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns transformations in JSON format</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
 					</li>
 				</ul>
@@ -3549,19 +3218,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L643">lib/filelink.ts:643</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L643">lib/filelink.ts:643</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns JSONSchema form transformations params</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
@@ -5284,19 +4943,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1320">lib/filelink.ts:1320</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1320">lib/filelink.ts:1320</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Add task which minify a css file</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5318,20 +4967,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1331">lib/filelink.ts:1331</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1331">lib/filelink.ts:1331</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Add task which minify a javascript file.
-								For better handling of &#39;targets&#39; param, use with b64 flag enabled.</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5347,28 +4985,15 @@ img {
 				<a name="modulate" class="tsd-anchor"></a>
 				<h3>modulate</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">modulate<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/modulateparams.html" class="tsd-signature-type">ModulateParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">modulate<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/modulateparams.html" class="tsd-signature-type">ModulateParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1142">lib/filelink.ts:1142</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1142">lib/filelink.ts:1142</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds modulate transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#modulate">https://www.filestack.com/docs/api/processing/#modulate</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5390,22 +5015,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L810">lib/filelink.ts:810</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L810">lib/filelink.ts:810</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Add monochrome transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#monochrome">https://www.filestack.com/docs/api/processing/#monochrome</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						<p>this</p>
 					</li>
@@ -5421,22 +5033,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L832">lib/filelink.ts:832</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L832">lib/filelink.ts:832</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds negative transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#negative">https://www.filestack.com/docs/api/processing/#negative</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						<p>this</p>
 					</li>
@@ -5446,28 +5045,15 @@ img {
 				<a name="oilpaint" class="tsd-anchor"></a>
 				<h3>oil<wbr>Paint</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">oil<wbr>Paint<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/oilpaintparams.html" class="tsd-signature-type">OilPaintParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">oil<wbr>Paint<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/oilpaintparams.html" class="tsd-signature-type">OilPaintParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1130">lib/filelink.ts:1130</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1130">lib/filelink.ts:1130</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds oilpaint transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#oil-paint">https://www.filestack.com/docs/api/processing/#oil-paint</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5489,22 +5075,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1238">lib/filelink.ts:1238</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1238">lib/filelink.ts:1238</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds output transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#output">https://www.filestack.com/docs/api/processing/#output</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5526,22 +5099,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1166">lib/filelink.ts:1166</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1166">lib/filelink.ts:1166</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds partial blur transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#partial-blur">https://www.filestack.com/docs/api/processing/#partial-blur</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5563,22 +5123,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1154">lib/filelink.ts:1154</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1154">lib/filelink.ts:1154</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds partial pixelate transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#partial-pixelate">https://www.filestack.com/docs/api/processing/#partial-pixelate</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5594,28 +5141,15 @@ img {
 				<a name="pixelate" class="tsd-anchor"></a>
 				<h3>pixelate</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">pixelate<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/pixelateparams.html" class="tsd-signature-type">PixelateParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">pixelate<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/pixelateparams.html" class="tsd-signature-type">PixelateParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1118">lib/filelink.ts:1118</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1118">lib/filelink.ts:1118</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds pixelate transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#pixelate">https://www.filestack.com/docs/api/processing/#pixelate</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5637,22 +5171,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L962">lib/filelink.ts:962</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L962">lib/filelink.ts:962</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds pixelate faces transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#pixelate-faces">https://www.filestack.com/docs/api/processing/#pixelate-faces</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5668,28 +5189,15 @@ img {
 				<a name="polaroid" class="tsd-anchor"></a>
 				<h3>polaroid</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">polaroid<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/polaroidparams.html" class="tsd-signature-type">PolaroidParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">polaroid<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/polaroidparams.html" class="tsd-signature-type">PolaroidParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L998">lib/filelink.ts:998</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L998">lib/filelink.ts:998</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds polaroid transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#polaroid">https://www.filestack.com/docs/api/processing/#polaroid</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5711,22 +5219,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1214">lib/filelink.ts:1214</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1214">lib/filelink.ts:1214</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds quality transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#quality">https://www.filestack.com/docs/api/processing/#quality</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5748,22 +5243,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L799">lib/filelink.ts:799</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L799">lib/filelink.ts:799</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Add security to link</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#redeye">https://www.filestack.com/docs/api/processing/#redeye</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 					</li>
 				</ul>
@@ -5778,19 +5260,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L739">lib/filelink.ts:739</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L739">lib/filelink.ts:739</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Cleanup transformations on filelink</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 					</li>
 				</ul>
@@ -5805,22 +5277,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L902">lib/filelink.ts:902</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L902">lib/filelink.ts:902</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds resize transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#resize">https://www.filestack.com/docs/api/processing/#resize</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5842,22 +5301,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L926">lib/filelink.ts:926</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L926">lib/filelink.ts:926</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds rotate transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#rotate">https://www.filestack.com/docs/api/processing/#rotate</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5873,28 +5319,15 @@ img {
 				<a name="roundedcorners" class="tsd-anchor"></a>
 				<h3>rounded<wbr>Corners</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">rounded<wbr>Corners<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/roundedcornersparams.html" class="tsd-signature-type">RoundedCornersParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">rounded<wbr>Corners<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/roundedcornersparams.html" class="tsd-signature-type">RoundedCornersParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L986">lib/filelink.ts:986</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L986">lib/filelink.ts:986</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds rounded corners transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#rounded-corners">https://www.filestack.com/docs/api/processing/#rounded-corners</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5916,22 +5349,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1226">lib/filelink.ts:1226</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1226">lib/filelink.ts:1226</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds security transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#security">https://www.filestack.com/docs/api/processing/#security</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5947,28 +5367,15 @@ img {
 				<a name="sepia" class="tsd-anchor"></a>
 				<h3>sepia</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">sepia<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/sepiaparams.html" class="tsd-signature-type">SepiaParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">sepia<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/sepiaparams.html" class="tsd-signature-type">SepiaParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1106">lib/filelink.ts:1106</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1106">lib/filelink.ts:1106</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds sepia transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#sepia">https://www.filestack.com/docs/api/processing/#sepia</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -5990,19 +5397,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L580">lib/filelink.ts:580</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L580">lib/filelink.ts:580</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Enable new base64 link support to avoid problems with special chars in link</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -6023,19 +5420,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L604">lib/filelink.ts:604</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L604">lib/filelink.ts:604</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Set cname for transformation link</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -6056,19 +5443,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L616">lib/filelink.ts:616</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L616">lib/filelink.ts:616</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Set custom domain. Used for test purpose. It will be removed when after client.transform</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -6089,7 +5466,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L621">lib/filelink.ts:621</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L621">lib/filelink.ts:621</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -6112,19 +5489,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L592">lib/filelink.ts:592</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L592">lib/filelink.ts:592</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Switch the useValidator flag</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -6145,22 +5512,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L854">lib/filelink.ts:854</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L854">lib/filelink.ts:854</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds sfw transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#sfw">https://www.filestack.com/docs/api/processing/#sfw</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						<p>this</p>
 					</li>
@@ -6170,28 +5524,15 @@ img {
 				<a name="shadow" class="tsd-anchor"></a>
 				<h3>shadow</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">shadow<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/shadowparams.html" class="tsd-signature-type">ShadowParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">shadow<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/shadowparams.html" class="tsd-signature-type">ShadowParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1034">lib/filelink.ts:1034</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1034">lib/filelink.ts:1034</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds shadow transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#shadow">https://www.filestack.com/docs/api/processing/#shadow</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -6207,28 +5548,15 @@ img {
 				<a name="sharpen" class="tsd-anchor"></a>
 				<h3>sharpen</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">sharpen<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/sharpenparams.html" class="tsd-signature-type">SharpenParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">sharpen<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/sharpenparams.html" class="tsd-signature-type">SharpenParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1070">lib/filelink.ts:1070</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1070">lib/filelink.ts:1070</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds sharpen transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#sharpen">https://www.filestack.com/docs/api/processing/#sharpen</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -6244,28 +5572,15 @@ img {
 				<a name="store" class="tsd-anchor"></a>
 				<h3>store</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../globals.html#storeparams" class="tsd-signature-type">StoreParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../globals.html#storeparams" class="tsd-signature-type">StoreParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L878">lib/filelink.ts:878</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L878">lib/filelink.ts:878</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds store transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#store">https://www.filestack.com/docs/api/processing/#store</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -6287,22 +5602,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L843">lib/filelink.ts:843</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L843">lib/filelink.ts:843</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds tags transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#tags">https://www.filestack.com/docs/api/processing/#tags</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						<p>this</p>
 					</li>
@@ -6318,19 +5620,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L666">lib/filelink.ts:666</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L666">lib/filelink.ts:666</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns transform url</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 					</li>
 				</ul>
@@ -6339,28 +5631,15 @@ img {
 				<a name="tornedges" class="tsd-anchor"></a>
 				<h3>torn<wbr>Edges</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">torn<wbr>Edges<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/tornedgesparams.html" class="tsd-signature-type">TornEdgesParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">torn<wbr>Edges<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/tornedgesparams.html" class="tsd-signature-type">TornEdgesParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1022">lib/filelink.ts:1022</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1022">lib/filelink.ts:1022</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds torn edges transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#torn-edges">https://www.filestack.com/docs/api/processing/#torn-edges</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -6376,28 +5655,15 @@ img {
 				<a name="upscale" class="tsd-anchor"></a>
 				<h3>upscale</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">upscale<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/upscaleparams.html" class="tsd-signature-type">UpscaleParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">upscale<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/upscaleparams.html" class="tsd-signature-type">UpscaleParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1190">lib/filelink.ts:1190</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1190">lib/filelink.ts:1190</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds upscale transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#upscale">https://www.filestack.com/docs/api/processing/#upscale</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -6419,22 +5685,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1250">lib/filelink.ts:1250</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1250">lib/filelink.ts:1250</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds video convert transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#video-convert">https://www.filestack.com/docs/api/processing/#video-convert</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -6450,28 +5703,15 @@ img {
 				<a name="vignette" class="tsd-anchor"></a>
 				<h3>vignette</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">vignette<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/vignetteparams.html" class="tsd-signature-type">VignetteParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">vignette<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/vignetteparams.html" class="tsd-signature-type">VignetteParams</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1010">lib/filelink.ts:1010</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1010">lib/filelink.ts:1010</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Adds vignette transformation</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#vignette">https://www.filestack.com/docs/api/processing/#vignette</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -6493,23 +5733,9 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/filelink.ts#L1310">lib/filelink.ts:1310</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/filelink.ts#L1310">lib/filelink.ts:1310</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Add zip transformation which create a zip package on files
-								used on actual context</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing/#zip">https://www.filestack.com/docs/api/processing/#zip</a></p>
-								</dd>
-								<dt>memberof</dt>
-								<dd><p>Filelink</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						<p>this</p>
 					</li>

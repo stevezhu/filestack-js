@@ -2466,22 +2466,6 @@ img {
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<section class="tsd-panel tsd-comment">
-			<div class="tsd-comment tsd-typography">
-				<div class="lead">
-					<p>The Filestack client, the entry point for all public methods. Encapsulates session information.</p>
-				</div>
-				<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-					<h3>Example</h3>
-				</a>
-				<pre><code class="language-js"><span class="hljs-comment">// ES module</span>
-<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> filestack <span class="hljs-keyword">from</span> <span class="hljs-string">'filestack-js'</span>;
-<span class="hljs-keyword">const</span> client = filestack.init(<span class="hljs-string">'apikey'</span>);</code></pre>
-				<pre><code class="language-js"><span class="hljs-comment">// UMD module in browser</span>
-&lt;script src=<span class="hljs-string">"https://static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
-<span class="hljs-keyword">const</span> client = filestack.init(<span class="hljs-string">'apikey'</span>);</code></pre>
-			</div>
-		</section>
 		<section class="tsd-panel tsd-type-parameters">
 			<h3>Type parameters</h3>
 			<ul class="tsd-type-parameters">
@@ -2565,13 +2549,13 @@ img {
 				<a name="constructor" class="tsd-anchor"></a>
 				<h3>constructor</h3>
 				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">new <wbr>Client<span class="tsd-signature-symbol">(</span>apikey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/clientoptions.html" class="tsd-signature-type">ClientOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="client.html" class="tsd-signature-type">Client</a></li>
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Client<span class="tsd-signature-symbol">(</span>apikey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/clientoptions.html" class="tsd-signature-type">ClientOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="client.html" class="tsd-signature-type">Client</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L94">lib/client.ts:94</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L94">lib/client.ts:94</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2596,7 +2580,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">session<span class="tsd-signature-symbol">:</span> <a href="../interfaces/session.html" class="tsd-signature-type">Session</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L93">lib/client.ts:93</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L93">lib/client.ts:93</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2628,7 +2612,7 @@ img {
 				<a name="addlistener" class="tsd-anchor"></a>
 				<h3>add<wbr>Listener</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">add<wbr>Listener&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ListenerFn</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">add<wbr>Listener&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ListenerFn</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -2664,7 +2648,7 @@ img {
 				<a name="emit" class="tsd-anchor"></a>
 				<h3>emit</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">emit&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					<li class="tsd-signature tsd-kind-icon">emit&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -2674,11 +2658,6 @@ img {
 								<li>Defined in /Users/pcholuj/Documents/projects/filestack-js/node_modules/eventemitter3/index.d.ts:30</li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Calls each of the listeners registered for a given event.</p>
-							</div>
-						</div>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
 						<ul class="tsd-type-parameters">
 							<li>
@@ -2691,7 +2670,7 @@ img {
 								<h5>event: <span class="tsd-signature-type">T</span></h5>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<h5><span class="tsd-flag ts-flagRest">Rest</span> args: <span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -2712,12 +2691,6 @@ img {
 								<li>Defined in /Users/pcholuj/Documents/projects/filestack-js/node_modules/eventemitter3/index.d.ts:15</li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Return an array listing the events for which the emitter has registered
-								listeners.</p>
-							</div>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventNames</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
@@ -2736,11 +2709,6 @@ img {
 								<li>Defined in /Users/pcholuj/Documents/projects/filestack-js/node_modules/eventemitter3/index.d.ts:25</li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Return the number of listeners listening to a given event.</p>
-							</div>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -2765,11 +2733,6 @@ img {
 								<li>Defined in /Users/pcholuj/Documents/projects/filestack-js/node_modules/eventemitter3/index.d.ts:20</li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Return the listeners registered for a given event.</p>
-							</div>
-						</div>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
 						<ul class="tsd-type-parameters">
 							<li>
@@ -2790,29 +2753,19 @@ img {
 				<a name="logout" class="tsd-anchor"></a>
 				<h3>logout</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">logout<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">logout<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L161">lib/client.ts:161</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L161">lib/client.ts:161</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Clear all current cloud sessions in the picker.
-									Optionally pass a cloud source name to only log out of that cloud source.
-								This essentially clears the OAuth authorization codes from the Filestack session.</p>
-							</div>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> name: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Optional cloud source name.</p>
-								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2823,55 +2776,25 @@ img {
 				<a name="metadata" class="tsd-anchor"></a>
 				<h3>metadata</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">metadata<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/metadataoptions.html" class="tsd-signature-type">MetadataOptions</a>, security<span class="tsd-signature-symbol">?: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">metadata<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/metadataoptions.html" class="tsd-signature-type">MetadataOptions</a>, security<span class="tsd-signature-symbol">: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L184">lib/client.ts:184</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L184">lib/client.ts:184</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Retrieve detailed data of stored files.</p>
-							</div>
-							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-								<h3>Example</h3>
-							</a>
-							<pre><code class="language-js">client
-  .metadata(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>)
-  .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
-    <span class="hljs-built_in">console</span>.log(res);
-  })
-  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
-    <span class="hljs-built_in">console</span>.log(err);
-  }));</code></pre>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/file#metadata">File API - Metadata</a>.</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>handle: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Valid Filestack handle.</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/metadataoptions.html" class="tsd-signature-type">MetadataOptions</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Metadata fields to enable on response.</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> security: <a href="../interfaces/security.html" class="tsd-signature-type">Security</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Optional security override.</p>
-								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2882,67 +2805,31 @@ img {
 				<a name="multiupload" class="tsd-anchor"></a>
 				<h3>multiupload</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">multiupload<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><a href="../globals.html#inputfile" class="tsd-signature-type">InputFile</a><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/uploadoptions.html" class="tsd-signature-type">UploadOptions</a>, storeOptions<span class="tsd-signature-symbol">?: </span><a href="../globals.html#storeuploadoptions" class="tsd-signature-type">StoreUploadOptions</a>, token<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, security<span class="tsd-signature-symbol">?: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">multiupload<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><a href="../globals.html#inputfile" class="tsd-signature-type">InputFile</a><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/uploadoptions.html" class="tsd-signature-type">UploadOptions</a>, storeOptions<span class="tsd-signature-symbol">: </span><a href="../globals.html#storeuploadoptions" class="tsd-signature-type">StoreUploadOptions</a>, token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, security<span class="tsd-signature-symbol">: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L443">lib/client.ts:443</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L443">lib/client.ts:443</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Initiates a multi-part upload flow. Use this for Filestack CIN and FII uploads.</p>
-							</div>
-							<p>In Node runtimes the file argument is treated as a file path.
-							Uploading from a Node buffer is not yet implemented.</p>
-							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-								<h3>Example</h3>
-							</a>
-							<pre><code class="language-js"><span class="hljs-keyword">const</span> token = {};
-<span class="hljs-keyword">const</span> onRetry = <span class="hljs-function">(<span class="hljs-params">obj</span>) =&gt;</span> {
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Retrying <span class="hljs-subst">${obj.location}</span> for <span class="hljs-subst">${obj.filename}</span>. Attempt <span class="hljs-subst">${obj.attempt}</span> of 10.`</span>);
-};
-
-client.multiupload([file], { onRetry }, token)
-  .then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(res));
-
-client.multiupload([{file, name}], { onRetry }, token)
-  .then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(res));
-
-token.pause();  <span class="hljs-comment">// Pause flow</span>
-token.resume(); <span class="hljs-comment">// Resume flow</span>
-token.cancel(); <span class="hljs-comment">// Cancel flow (rejects)</span></code></pre>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>file: <a href="../globals.html#inputfile" class="tsd-signature-type">InputFile</a><span class="tsd-signature-symbol">[]</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Must be a valid [File | Blob | Buffer | string (base64)]</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/uploadoptions.html" class="tsd-signature-type">UploadOptions</a></h5>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> storeOptions: <a href="../globals.html#storeuploadoptions" class="tsd-signature-type">StoreUploadOptions</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Storage options.</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> token: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>A control token that can be used to call cancel(), pause(), and resume().</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> security: <a href="../interfaces/security.html" class="tsd-signature-type">Security</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Optional security policy and signature override.</p>
-								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2953,7 +2840,7 @@ token.cancel(); <span class="hljs-comment">// Cancel flow (rejects)</span></code
 				<a name="off" class="tsd-anchor"></a>
 				<h3>off</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">off&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, fn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ListenerFn</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, once<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">off&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ListenerFn</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, once<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -2992,7 +2879,7 @@ token.cancel(); <span class="hljs-comment">// Cancel flow (rejects)</span></code
 				<a name="on" class="tsd-anchor"></a>
 				<h3>on</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">on&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ListenerFn</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">on&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ListenerFn</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -3002,11 +2889,6 @@ token.cancel(); <span class="hljs-comment">// Cancel flow (rejects)</span></code
 								<li>Defined in /Users/pcholuj/Documents/projects/filestack-js/node_modules/eventemitter3/index.d.ts:35</li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Add a listener for a given event.</p>
-							</div>
-						</div>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
 						<ul class="tsd-type-parameters">
 							<li>
@@ -3033,7 +2915,7 @@ token.cancel(); <span class="hljs-comment">// Cancel flow (rejects)</span></code
 				<a name="once" class="tsd-anchor"></a>
 				<h3>once</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">once&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ListenerFn</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">once&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ListenerFn</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -3043,11 +2925,6 @@ token.cancel(); <span class="hljs-comment">// Cancel flow (rejects)</span></code
 								<li>Defined in /Users/pcholuj/Documents/projects/filestack-js/node_modules/eventemitter3/index.d.ts:41</li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Add a one-time listener for a given event.</p>
-							</div>
-						</div>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
 						<ul class="tsd-type-parameters">
 							<li>
@@ -3074,20 +2951,15 @@ token.cancel(); <span class="hljs-comment">// Cancel flow (rejects)</span></code
 				<a name="picker" class="tsd-anchor"></a>
 				<h3>picker</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">picker<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/pickeroptions.html" class="tsd-signature-type">PickerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/pickerinstance.html" class="tsd-signature-type">PickerInstance</a></li>
+					<li class="tsd-signature tsd-kind-icon">picker<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/pickeroptions.html" class="tsd-signature-type">PickerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/pickerinstance.html" class="tsd-signature-type">PickerInstance</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L191">lib/client.ts:191</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L191">lib/client.ts:191</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Construct a new picker instance.</p>
-							</div>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3102,40 +2974,22 @@ token.cancel(); <span class="hljs-comment">// Cancel flow (rejects)</span></code
 				<a name="preview" class="tsd-anchor"></a>
 				<h3>preview</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">preview<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/previewoptions.html" class="tsd-signature-type">PreviewOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLIFrameElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Window</span></li>
+					<li class="tsd-signature tsd-kind-icon">preview<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/previewoptions.html" class="tsd-signature-type">PreviewOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLIFrameElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Window</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L209">lib/client.ts:209</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L209">lib/client.ts:209</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Used for viewing files via Filestack handles or storage aliases, <strong>requires Document Viewer addon to your Filestack application</strong>.
-								Opens document viewer in new window if id option is not provided.</p>
-							</div>
-							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-								<h3>Example</h3>
-							</a>
-							<pre><code class="language-js"><span class="hljs-comment">// &lt;div id="preview"&gt;&lt;/div&gt;</span>
-
-client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span class="hljs-attr">id</span>: <span class="hljs-string">'preview'</span> });</code></pre>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>handle: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Valid Filestack handle.</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/previewoptions.html" class="tsd-signature-type">PreviewOptions</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Preview options</p>
-								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLIFrameElement</span>
@@ -3149,50 +3003,22 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 				<a name="remove" class="tsd-anchor"></a>
 				<h3>remove</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, security<span class="tsd-signature-symbol">?: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, security<span class="tsd-signature-symbol">: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L234">lib/client.ts:234</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L234">lib/client.ts:234</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Remove a file from storage and the Filestack system.</p>
-							</div>
-							<p><strong>Requires a valid security policy and signature</strong>. The policy and signature will be pulled from the client session, or it can be overridden with the security parameter.</p>
-							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-								<h3>Example</h3>
-							</a>
-							<pre><code class="language-js">client
-  .remove(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>)
-  .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
-    <span class="hljs-built_in">console</span>.log(res);
-  })
-  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
-    <span class="hljs-built_in">console</span>.log(err);
-  }));</code></pre>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/file#delete">File API - Delete</a></p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>handle: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Valid Filestack handle.</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> security: <a href="../interfaces/security.html" class="tsd-signature-type">Security</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Optional security override.</p>
-								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -3203,7 +3029,7 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 				<a name="removealllisteners" class="tsd-anchor"></a>
 				<h3>remove<wbr>All<wbr>Listeners</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">remove<wbr>All<wbr>Listeners<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">EventNames</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">remove<wbr>All<wbr>Listeners<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventNames</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -3213,11 +3039,6 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 								<li>Defined in /Users/pcholuj/Documents/projects/filestack-js/node_modules/eventemitter3/index.d.ts:52</li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Remove all listeners, or those of the specified event.</p>
-							</div>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3232,7 +3053,7 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 				<a name="removelistener" class="tsd-anchor"></a>
 				<h3>remove<wbr>Listener</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">remove<wbr>Listener&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, fn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ListenerFn</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, once<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">remove<wbr>Listener&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ListenerFn</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventArgs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventTypes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, once<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -3242,11 +3063,6 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 								<li>Defined in /Users/pcholuj/Documents/projects/filestack-js/node_modules/eventemitter3/index.d.ts:46</li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Remove the listeners of a given event.</p>
-							</div>
-						</div>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
 						<ul class="tsd-type-parameters">
 							<li>
@@ -3276,50 +3092,22 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 				<a name="removemetadata" class="tsd-anchor"></a>
 				<h3>remove<wbr>Metadata</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">remove<wbr>Metadata<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, security<span class="tsd-signature-symbol">?: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">remove<wbr>Metadata<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, security<span class="tsd-signature-symbol">: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L259">lib/client.ts:259</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L259">lib/client.ts:259</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Remove a file <strong>only</strong> from the Filestack system. The file remains in storage.</p>
-							</div>
-							<p><strong>Requires a valid security policy and signature</strong>. The policy and signature will be pulled from the client session, or it can be overridden with the security parameter.</p>
-							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-								<h3>Example</h3>
-							</a>
-							<pre><code class="language-js">client
-  .removeMetadata(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>)
-  .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
-    <span class="hljs-built_in">console</span>.log(res);
-  })
-  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
-    <span class="hljs-built_in">console</span>.log(err);
-  }));</code></pre>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/file#delete">File API - Delete</a></p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>handle: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Valid Filestack handle.</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> security: <a href="../interfaces/security.html" class="tsd-signature-type">Security</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Optional security override.</p>
-								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -3330,61 +3118,25 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 				<a name="retrieve" class="tsd-anchor"></a>
 				<h3>retrieve</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">retrieve<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/retrieveoptions.html" class="tsd-signature-type">RetrieveOptions</a>, security<span class="tsd-signature-symbol">?: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">retrieve<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/retrieveoptions.html" class="tsd-signature-type">RetrieveOptions</a>, security<span class="tsd-signature-symbol">: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L310">lib/client.ts:310</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L310">lib/client.ts:310</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Access files via their Filestack handles.</p>
-							</div>
-							<p>If head option is provided - request headers are returned in promise
-								If metadata option is provided - metadata object is returned in promise
-								Otherwise file blob is returned
-							Metadata and head options cannot be mixed</p>
-							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-								<h3>Example</h3>
-							</a>
-							<pre><code class="language-js">client.retrieve(<span class="hljs-string">'fileHandle'</span>, {
- <span class="hljs-attr">metadata</span>: <span class="hljs-literal">true</span>,
-}).then(<span class="hljs-function">(<span class="hljs-params">response</span>) =&gt;</span> {
- <span class="hljs-built_in">console</span>.log(response);
-}).catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
- <span class="hljs-built_in">console</span>.error(err);
-})</code></pre>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/file#download">File API - Download</a></p>
-								</dd>
-								<dt>throws</dt>
-								<dd><p>Error</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>handle: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Valid file handle</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/retrieveoptions.html" class="tsd-signature-type">RetrieveOptions</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>RetrieveOptions</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> security: <a href="../interfaces/security.html" class="tsd-signature-type">Security</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Optional security override.</p>
-								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -3401,19 +3153,9 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L146">lib/client.ts:146</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L146">lib/client.ts:146</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Set custom cname</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Client</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3434,19 +3176,9 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L128">lib/client.ts:128</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L128">lib/client.ts:128</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Set security object</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>Client</p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
@@ -3461,56 +3193,28 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 				<a name="storeurl" class="tsd-anchor"></a>
 				<h3>storeURL</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">storeURL<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../globals.html#storeparams" class="tsd-signature-type">StoreParams</a>, token<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, security<span class="tsd-signature-symbol">?: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">storeURL<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../globals.html#storeparams" class="tsd-signature-type">StoreParams</a>, token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, security<span class="tsd-signature-symbol">: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L279">lib/client.ts:279</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L279">lib/client.ts:279</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Store a file from its URL.</p>
-							</div>
-							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-								<h3>Example</h3>
-							</a>
-							<pre><code class="language-js">client
-  .storeURL(<span class="hljs-string">'https://d1wtqaffaaj63z.cloudfront.net/images/NY_199_E_of_Hammertown_2014.jpg'</span>)
-  .then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(res));</code></pre>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/file#store">File API - Store</a></p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>url: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Valid URL to a file.</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../globals.html#storeparams" class="tsd-signature-type">StoreParams</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Configure file storage.</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> token: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Optional control token to call .cancel()</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> security: <a href="../interfaces/security.html" class="tsd-signature-type">Security</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Optional security override.</p>
-								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -3527,60 +3231,19 @@ client.preview(<span class="hljs-string">'DCL5K46FS3OIxb5iuKby'</span>, { <span 
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L348">lib/client.ts:348</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L348">lib/client.ts:348</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Interface to the Filestack <a href="https://www.filestack.com/docs/api/processing">Processing API</a>.
-									Convert a URL, handle, or storage alias to another URL which links to the transformed file.
-								You can optionally store the returned URL with client.storeURL.</p>
-							</div>
-							<p>Transform params can be provided in camelCase or snakeCase style ie: partial_pixelate or partialPixelate</p>
-							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-								<h3>Example</h3>
-							</a>
-							<pre><code class="language-js"><span class="hljs-keyword">const</span> transformedUrl = client.transform(url, {
-  <span class="hljs-attr">crop</span>: {
-    <span class="hljs-attr">dim</span>: [x, y, width, height],
-  },
-  <span class="hljs-attr">vignette</span>: {
-    <span class="hljs-attr">blurmode</span>: <span class="hljs-string">'gaussian'</span>,
-    <span class="hljs-attr">amount</span>: <span class="hljs-number">50</span>,
-  },
-  <span class="hljs-attr">flip</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">partial_pixelate</span>: {
-    <span class="hljs-attr">objects</span>: [[<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">200</span>, <span class="hljs-number">250</span>], [<span class="hljs-number">275</span>, <span class="hljs-number">91</span>, <span class="hljs-number">500</span>, <span class="hljs-number">557</span>]],
-  },
-};
-
-<span class="hljs-comment">// optionally store the new URL</span>
-client.storeURL(transformedUrl).then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(res));</code></pre>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://www.filestack.com/docs/api/processing">Filestack Processing API</a></p>
-								</dd>
-							</dl>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Single or multiple valid URLs (http(s)://), file handles, or storage aliases (src://) to an image.</p>
-								</div>
 							</li>
 							<li>
 								<h5>options: <a href="../interfaces/transformoptions.html" class="tsd-signature-type">TransformOptions</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Transformations are applied in the order specified by this object.</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> b64: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Use new more safe format for generating transforms url (default=false) Note: If there will be any issues with url please test it with enabled b64 support</p>
-								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -3592,67 +3255,31 @@ client.storeURL(transformedUrl).then(<span class="hljs-function"><span class="hl
 				<a name="upload" class="tsd-anchor"></a>
 				<h3>upload</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">upload<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><a href="../globals.html#inputfile" class="tsd-signature-type">InputFile</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/uploadoptions.html" class="tsd-signature-type">UploadOptions</a>, storeOptions<span class="tsd-signature-symbol">?: </span><a href="../globals.html#storeuploadoptions" class="tsd-signature-type">StoreUploadOptions</a>, token<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, security<span class="tsd-signature-symbol">?: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">upload<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><a href="../globals.html#inputfile" class="tsd-signature-type">InputFile</a>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/uploadoptions.html" class="tsd-signature-type">UploadOptions</a>, storeOptions<span class="tsd-signature-symbol">: </span><a href="../globals.html#storeuploadoptions" class="tsd-signature-type">StoreUploadOptions</a>, token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, security<span class="tsd-signature-symbol">: </span><a href="../interfaces/security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/eeb01a9/src/lib/client.ts#L385">lib/client.ts:385</a></li>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/4882623/src/lib/client.ts#L385">lib/client.ts:385</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Initiates a multi-part upload flow. Use this for Filestack CIN and FII uploads.</p>
-							</div>
-							<p>In Node runtimes the file argument is treated as a file path.
-							Uploading from a Node buffer is not yet implemented.</p>
-							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-								<h3>Example</h3>
-							</a>
-							<pre><code class="language-js"><span class="hljs-keyword">const</span> token = {};
-<span class="hljs-keyword">const</span> onRetry = <span class="hljs-function">(<span class="hljs-params">obj</span>) =&gt;</span> {
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Retrying <span class="hljs-subst">${obj.location}</span> for <span class="hljs-subst">${obj.filename}</span>. Attempt <span class="hljs-subst">${obj.attempt}</span> of 10.`</span>);
-};
-
-client.upload(file, { onRetry }, { <span class="hljs-attr">filename</span>: <span class="hljs-string">'foobar.jpg'</span> }, token)
-  .then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(res));
-
-client.upload({file, name}, { onRetry }, { <span class="hljs-attr">filename</span>: <span class="hljs-string">'foobar.jpg'</span> }, token)
-  .then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(res));
-
-token.pause();  <span class="hljs-comment">// Pause flow</span>
-token.resume(); <span class="hljs-comment">// Resume flow</span>
-token.cancel(); <span class="hljs-comment">// Cancel flow (rejects)</span></code></pre>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>file: <a href="../globals.html#inputfile" class="tsd-signature-type">InputFile</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Must be a valid [File | Blob | Buffer | string]</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/uploadoptions.html" class="tsd-signature-type">UploadOptions</a></h5>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> storeOptions: <a href="../globals.html#storeuploadoptions" class="tsd-signature-type">StoreUploadOptions</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Storage options.</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> token: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>A control token that can be used to call cancel(), pause(), and resume().</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> security: <a href="../interfaces/security.html" class="tsd-signature-type">Security</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Optional security policy and signature override.</p>
-								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
