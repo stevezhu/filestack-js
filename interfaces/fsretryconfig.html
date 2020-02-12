@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EResponseType | filestack-js</title>
+	<title>FsRetryConfig | filestack-js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2363,14 +2363,20 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class="current tsd-kind-enum tsd-is-private">
-			<a href="eresponsetype.html" class="tsd-kind-icon">EResponse<wbr>Type</a>
+		<li class="current tsd-kind-interface">
+			<a href="fsretryconfig.html" class="tsd-kind-icon">Fs<wbr>Retry<wbr>Config</a>
 			<ul>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="eresponsetype.html#blob" class="tsd-kind-icon">blob</a>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="fsretryconfig.html#onretry" class="tsd-kind-icon">on<wbr>Retry</a>
 				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="eresponsetype.html#json" class="tsd-kind-icon">json</a>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="fsretryconfig.html#retry" class="tsd-kind-icon">retry</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="fsretryconfig.html#retryfactor" class="tsd-kind-icon">retry<wbr>Factor</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="fsretryconfig.html#retrymaxtime" class="tsd-kind-icon">retry<wbr>Max<wbr>Time</a>
 				</li>
 			</ul>
 		</li>
@@ -2378,43 +2384,90 @@ img {
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<section class="tsd-panel tsd-comment">
-			<div class="tsd-comment tsd-typography">
-			</div>
+		<section class="tsd-panel tsd-hierarchy">
+			<h3>Hierarchy</h3>
+			<ul class="tsd-hierarchy">
+				<li>
+					<span class="target">FsRetryConfig</span>
+				</li>
+			</ul>
 		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Enumeration members</h3>
+						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eresponsetype.html#blob" class="tsd-kind-icon">blob</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eresponsetype.html#json" class="tsd-kind-icon">json</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fsretryconfig.html#onretry" class="tsd-kind-icon">on<wbr>Retry</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fsretryconfig.html#retry" class="tsd-kind-icon">retry</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fsretryconfig.html#retryfactor" class="tsd-kind-icon">retry<wbr>Factor</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fsretryconfig.html#retrymaxtime" class="tsd-kind-icon">retry<wbr>Max<wbr>Time</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Enumeration members</h2>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="blob" class="tsd-anchor"></a>
-				<h3>blob</h3>
-				<div class="tsd-signature tsd-kind-icon">blob<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;blob&quot;</span></div>
+			<h2>Properties</h2>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="onretry" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Retry</h3>
+				<div class="tsd-signature tsd-kind-icon">on<wbr>Retry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>requestConfig<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3d0dbc6/src/lib/api/file.ts#L126">src/lib/api/file.ts:126</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/87e1b57/src/lib/request/types.ts#L30">src/lib/request/types.ts:30</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-type-declaration">
+					<h4>Type declaration</h4>
+					<ul class="tsd-parameters">
+						<li class="tsd-parameter-siganture">
+							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>requestConfig<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+							</ul>
+							<ul class="tsd-descriptions">
+								<li class="tsd-description">
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5>requestConfig: <span class="tsd-signature-type">any</span></h5>
+										</li>
+									</ul>
+									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="retry" class="tsd-anchor"></a>
+				<h3>retry</h3>
+				<div class="tsd-signature tsd-kind-icon">retry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/87e1b57/src/lib/request/types.ts#L29">src/lib/request/types.ts:29</a></li>
 					</ul>
 				</aside>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="json" class="tsd-anchor"></a>
-				<h3>json</h3>
-				<div class="tsd-signature tsd-kind-icon">json<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;json&quot;</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="retryfactor" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> retry<wbr>Factor</h3>
+				<div class="tsd-signature tsd-kind-icon">retry<wbr>Factor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3d0dbc6/src/lib/api/file.ts#L127">src/lib/api/file.ts:127</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/87e1b57/src/lib/request/types.ts#L32">src/lib/request/types.ts:32</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="retrymaxtime" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> retry<wbr>Max<wbr>Time</h3>
+				<div class="tsd-signature tsd-kind-icon">retry<wbr>Max<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/87e1b57/src/lib/request/types.ts#L31">src/lib/request/types.ts:31</a></li>
 					</ul>
 				</aside>
 			</section>
