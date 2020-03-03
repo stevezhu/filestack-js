@@ -242,6 +242,11 @@ export class S3Uploader extends UploaderAbstract {
   }
 
   private getPayloadById(id: string): UploadPayload {
+    /* istanbul ignore if */
+    if (!this.payloads[id]) {
+      throw new FilestackError(`Missing payload wit id ${id}`);
+    }
+
     return this.payloads[id];
   }
 
@@ -430,6 +435,7 @@ export class S3Uploader extends UploaderAbstract {
    */
   private async uploadRegular(id: string, partNumber: number): Promise<any> {
     let payload = this.getPayloadById(id);
+
     const partMetadata = payload.parts[partNumber];
     let part = await payload.file.getPartByMetadata(partMetadata, this.integrityCheck);
 
@@ -447,6 +453,10 @@ export class S3Uploader extends UploaderAbstract {
       retry: this.retryConfig && this.uploadMode !== UploadMode.FALLBACK ? this.retryConfig : undefined,
     })
     .then(res => {
+      if (this.isFileFailed(id)) {
+        return Promise.reject(new Error('File upload failed. Cannot set upload data'));
+      }
+
       if (res.headers.etag) {
         this.setPartETag(id, partNumber, res.headers.etag);
       } else {
@@ -454,14 +464,12 @@ export class S3Uploader extends UploaderAbstract {
         part = null;
         throw new FilestackError('Cannot upload file, check S3 bucket settings', 'Etag header is not exposed in CORS settings', FilestackErrorType.REQUEST);
       }
-
       debug(`[${id}] S3 Upload response headers for ${partNumber}: \n%O\n`, res.headers);
 
       this.onProgressUpdate(id, partNumber, part.size);
 
       // release memory
       part = null;
-
       return res;
     })
     .catch(err => {
@@ -471,6 +479,11 @@ export class S3Uploader extends UploaderAbstract {
       if (err instanceof FilestackError) {
         return Promise.reject(err);
       }
+
+      if (this.isFileFailed(id)) {
+        return Promise.reject(new Error('File upload failed. Cannot set upload data'));
+      }
+
       // reset upload progress on failed part
       this.onProgressUpdate(id, partNumber, 0);
 
@@ -537,6 +550,10 @@ export class S3Uploader extends UploaderAbstract {
       onProgress: (pr: ProgressEvent) => this.onProgressUpdate(id, partNumber, part.offset + pr.loaded),
     })
       .then(res => {
+        if (this.isFileFailed(id)) {
+          return Promise.reject(new Error('File upload failed. Cannot set upload data'));
+        }
+
         this.onProgressUpdate(id, partNumber, part.offset + chunk.size);
         const newOffset = Math.min(part.offset + chunkSize, part.size);
 
@@ -556,6 +573,11 @@ export class S3Uploader extends UploaderAbstract {
       .catch(err => {
         // reset progress on failed upload
         this.onProgressUpdate(id, partNumber, part.offset);
+
+        if (this.isFileFailed(id)) {
+          return Promise.reject(new Error('File upload failed. Cannot set upload data'));
+        }
+
         const nextChunkSize = chunkSize / 2;
 
         if (nextChunkSize < MIN_CHUNK_SIZE) {
@@ -655,6 +677,10 @@ export class S3Uploader extends UploaderAbstract {
       }
     )
       .then(res => {
+        if (this.isFileFailed(id)) {
+          return Promise.reject(new Error('File upload failed. Cannot set upload data'));
+        }
+
         // if parts hasnt been merged, retry complete request again
         if (res.status === 202) {
           return new Promise((resolve, reject) => {
@@ -702,6 +728,19 @@ export class S3Uploader extends UploaderAbstract {
   }
 
   /**
+   * Check if file have failed status
+   * @param id
+   */
+  private isFileFailed(id) {
+    const payload = this.payloads[id];
+    if (payload.file.status === FileState.FAILED) {
+      return true;
+    }
+
+    return false;
+  }
+
+  /**
    * Emits normalized progress event
    *
    * @private
@@ -739,7 +778,7 @@ export class S3Uploader extends UploaderAbstract {
       files: filesProgress,
     };
 
-    debug(`Upload progress %O`, res);
+    // debug(`Upload progress %O`, res);
     this.emit('progress', res);
   }
 
@@ -767,7 +806,7 @@ export class S3Uploader extends UploaderAbstract {
    * @memberof S3Uploader
    */
   private setPartETag(id: string, partNumber: number, etag: string) {
-    debug(`[${id}] Set ${etag} etag for part ${partNumber}`);
+    // debug(`[${id}] Set ${etag} etag for part ${partNumber}`);
     this.getPayloadById(id).parts[partNumber].etag = etag;
   }
 
@@ -805,6 +844,8 @@ export class S3Uploader extends UploaderAbstract {
     if (!this.payloads[id]) {
       return;
     }
+
+    // if file status is failed, dequeue all parts from it
 
     this.payloads[id].file.status = status;
   }

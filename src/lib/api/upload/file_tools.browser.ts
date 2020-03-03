@@ -125,7 +125,7 @@ const readFile = async (file): Promise<any> => {
       return readPart(start, end, file);
     },
     release: () => {
-      file = null;
+      // file = null;
     },
   });
 };
@@ -143,7 +143,7 @@ const readPart = (start: number, end: number, file): Promise<any> => {
 
     const blob = file.slice(start, end);
     r.onload = () => resolve(r.result);
-    r.onerror = reject;
+    r.onerror = () => reject(new Error(`Cannot read file part from ${start} to ${end}`));
     r.readAsArrayBuffer(blob);
   });
 };

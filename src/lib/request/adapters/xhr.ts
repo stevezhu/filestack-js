@@ -20,6 +20,7 @@ import { AdapterInterface } from './interface';
 import { FsRequestOptions, FsResponse, FsHttpMethod } from '../types';
 import { FsRequestError, FsRequestErrorCode } from '../error';
 import { prepareData, parseResponse, parse as parseHeaders, combineURL } from './../helpers';
+import { uniqueId } from '../../utils/index';
 
 const debug = Debug('fs:request:xhr');
 const CANCEL_CLEAR = `FsCleanMemory`;
@@ -27,6 +28,8 @@ const CANCEL_CLEAR = `FsCleanMemory`;
 export class XhrAdapter implements AdapterInterface {
 
   request(config: FsRequestOptions) {
+    const id = uniqueId();
+
     // if this option is unspecified set it by default
     if (typeof config.filestackHeaders === 'undefined') {
       config.filestackHeaders = true;
@@ -62,7 +65,7 @@ export class XhrAdapter implements AdapterInterface {
 
     url = combineURL(url, config.params);
 
-    debug('Starting request to %s with options %O', url, config);
+    debug('[%s] Starting request to %s with options %O',id, url, config);
 
     request.open(config.method.toUpperCase(), url, true);
 
@@ -89,6 +92,8 @@ export class XhrAdapter implements AdapterInterface {
           headers: responseHeaders,
           config: config,
         };
+
+        debug('[%O] Response %O', id, response);
 
         request = null;
         response = parseResponse(response);
@@ -117,15 +122,18 @@ export class XhrAdapter implements AdapterInterface {
           return;
         }
 
+        debug('Request aborted %s', config);
         request = null;
         reject(new FsRequestError('Request aborted', config, null, FsRequestErrorCode.ABORTED));
       };
 
       // Handle low level network errors
       request.onerror = function handleError(err) {
+        debug('[%s] Request error! %O', id, err);
+
         request = null;
-        debug('Request error! %O', err);
-        reject(new FsRequestError('Network Error', config, null, FsRequestErrorCode.NETWORK));
+        reject(err);
+        // reject(new FsRequestError('Network Error', config, null, FsRequestErrorCode.NETWORK));
       };
 
       // Handle timeout
@@ -142,7 +150,7 @@ export class XhrAdapter implements AdapterInterface {
             continue;
           }
 
-          debug('Set request header %s to %s', key, headers[key]);
+          // debug('Set request header %s to %s', key, headers[key]);
           request.setRequestHeader(key, headers[key]);
         }
       }
@@ -150,11 +158,9 @@ export class XhrAdapter implements AdapterInterface {
       if (typeof config.onProgress === 'function' && [FsHttpMethod.POST, FsHttpMethod.PUT].indexOf(config.method) > -1) {
         /* istanbul ignore else: else path is just fallback to normal progress event */
         if (request.upload) {
-          debug('Bind to upload progress event');
           request.upload.addEventListener('progress', config.onProgress);
         } else {
-          debug('Bind to progress event');
-          request.addEventListener('progress', config.onProgress);
+          debug('Request does not support upload progress event');
         }
       }
 
