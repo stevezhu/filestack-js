@@ -36,9 +36,11 @@ export class FilestackError extends Error {
 
     /* istanbul ignore next */
     super(message);
-    Object.setPrototypeOf(this, FilestackError.prototype);
     this.details = details;
     this.type = type;
+
+    Object.setPrototypeOf(this, new.target.prototype); // restore prototype chain
+    this.name = FilestackError.name; // stack traces display correctly now
   }
 
 }

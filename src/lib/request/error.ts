@@ -67,14 +67,8 @@ export class FsRequestError extends Error {
     this.response = response;
     this.code = code;
 
-    // const captureStackTrace: Function = (Error as any).captureStackTrace;
-    // captureStackTrace && captureStackTrace(this);
-    fixProto(this, new.target.prototype);
-  }
-}
+    Object.setPrototypeOf(this, new.target.prototype); // restore prototype chain
 
-function fixProto(target: Error, prototype: {}) {
-  const setPrototypeOf: Function = (Object as any).setPrototypeOf;
-  /* istanbul ignore next */
-  setPrototypeOf ? setPrototypeOf(target, prototype) : ((target as any).__proto__ = prototype);
+    this.name = FsRequestError.name; // stack traces display correctly now
+  }
 }

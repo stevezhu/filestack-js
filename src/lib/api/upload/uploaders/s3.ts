@@ -406,12 +406,9 @@ export class S3Uploader extends UploaderAbstract {
       // method specific keys
       part: part.partNumber + 1,
       size: part.size,
+      md5: part.md5,
       offset,
     };
-
-    if (this.integrityCheck && part.md5) {
-      data.md5 = part.md5;
-    }
 
     return FsRequest.post(`${url}/multipart/upload`, data, {
       headers: this.getDefaultHeaders(id),
@@ -464,6 +461,7 @@ export class S3Uploader extends UploaderAbstract {
         part = null;
         throw new FilestackError('Cannot upload file, check S3 bucket settings', 'Etag header is not exposed in CORS settings', FilestackErrorType.REQUEST);
       }
+
       debug(`[${id}] S3 Upload response headers for ${partNumber}: \n%O\n`, res.headers);
 
       this.onProgressUpdate(id, partNumber, part.size);

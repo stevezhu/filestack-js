@@ -470,11 +470,13 @@ export class Client extends EventEmitter {
 
     /* istanbul ignore next */
     upload.on('error', (e) => {
-      Sentry.withScope(scope => {
-        scope.setExtras(e.details);
-        scope.setExtras({ uploadOptions: options, storeOptions });
-        Sentry.captureException(e);
-      });
+      if (this.forwardErrors) {
+        Sentry.withScope(scope => {
+          scope.setExtras(e.details);
+          scope.setExtras({ uploadOptions: options, storeOptions });
+          Sentry.captureException(e);
+        });
+      }
 
       this.emit('upload.error', e);
     });
