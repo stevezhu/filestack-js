@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FsTokenInterface | filestack-js</title>
+	<title>Prefetch | filestack-js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2363,14 +2363,14 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class="current tsd-kind-interface">
-			<a href="fstokeninterface.html" class="tsd-kind-icon">Fs<wbr>Token<wbr>Interface</a>
+		<li class="current tsd-kind-class tsd-is-private">
+			<a href="prefetch.html" class="tsd-kind-icon">Prefetch</a>
 			<ul>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="fstokeninterface.html#cancel" class="tsd-kind-icon">cancel</a>
+				<li class=" tsd-kind-constructor tsd-parent-kind-class">
+					<a href="prefetch.html#constructor" class="tsd-kind-icon">constructor</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="fstokeninterface.html#getsource" class="tsd-kind-icon">get<wbr>Source</a>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="prefetch.html#getconfig" class="tsd-kind-icon">get<wbr>Config</a>
 				</li>
 			</ul>
 		</li>
@@ -2378,18 +2378,16 @@ img {
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
+		<section class="tsd-panel tsd-comment">
+			<div class="tsd-comment tsd-typography">
+			</div>
+		</section>
 		<section class="tsd-panel tsd-hierarchy">
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<span class="target">FsTokenInterface</span>
+					<span class="target">Prefetch</span>
 				</li>
-			</ul>
-		</section>
-		<section class="tsd-panel">
-			<h3>Implemented by</h3>
-			<ul class="tsd-hierarchy">
-				<li><a href="../classes/fscanceltoken.html" class="tsd-signature-type">FsCancelToken</a></li>
 			</ul>
 		</section>
 		<section class="tsd-panel-group tsd-index-group">
@@ -2397,72 +2395,89 @@ img {
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Properties</h3>
+						<h3>Constructors</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fstokeninterface.html#cancel" class="tsd-kind-icon">cancel</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fstokeninterface.html#getsource" class="tsd-kind-icon">get<wbr>Source</a></li>
+							<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="prefetch.html#constructor" class="tsd-kind-icon">constructor</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
+						<h3>Methods</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="prefetch.html#getconfig" class="tsd-kind-icon">get<wbr>Config</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Properties</h2>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="cancel" class="tsd-anchor"></a>
-				<h3>cancel</h3>
-				<div class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/filestackerror.html#error" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3729843/src/lib/request/types.ts#L36">src/lib/request/types.ts:36</a></li>
-					</ul>
-				</aside>
-				<div class="tsd-type-declaration">
-					<h4>Type declaration</h4>
-					<ul class="tsd-parameters">
-						<li class="tsd-parameter-siganture">
-							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/filestackerror.html#error" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+			<h2>Constructors</h2>
+			<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<a name="constructor" class="tsd-anchor"></a>
+				<h3>constructor</h3>
+				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Prefetch<span class="tsd-signature-symbol">(</span>param<span class="tsd-signature-symbol">: </span><a href="../interfaces/session.html" class="tsd-signature-type">Session</a><span class="tsd-signature-symbol"> | </span><a href="client.html" class="tsd-signature-type">Client</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="prefetch.html" class="tsd-signature-type">Prefetch</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3729843/src/lib/api/prefetch.ts#L73">src/lib/api/prefetch.ts:73</a></li>
 							</ul>
-							<ul class="tsd-descriptions">
-								<li class="tsd-description">
-									<h4 class="tsd-parameters-title">Parameters</h4>
-									<ul class="tsd-parameters">
-										<li>
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> reason: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/filestackerror.html#error" class="tsd-signature-type">Error</a></h5>
-										</li>
-									</ul>
-									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>param: <a href="../interfaces/session.html" class="tsd-signature-type">Session</a><span class="tsd-signature-symbol"> | </span><a href="client.html" class="tsd-signature-type">Client</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="prefetch.html" class="tsd-signature-type">Prefetch</a></h4>
+					</li>
+				</ul>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="getsource" class="tsd-anchor"></a>
-				<h3>get<wbr>Source</h3>
-				<div class="tsd-signature tsd-kind-icon">get<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3729843/src/lib/request/types.ts#L37">src/lib/request/types.ts:37</a></li>
-					</ul>
-				</aside>
-				<div class="tsd-type-declaration">
-					<h4>Type declaration</h4>
-					<ul class="tsd-parameters">
-						<li class="tsd-parameter-siganture">
-							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Methods</h2>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="getconfig" class="tsd-anchor"></a>
+				<h3>get<wbr>Config</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Config<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>events<span class="tsd-signature-symbol">: </span><a href="../enums/prefetchevents.html" class="tsd-signature-type">PrefetchEvents</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>permissions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">"enhance"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"intelligent_ingestion"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"whitelabel"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"transforms_ui"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"advanced_enhance"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>pickerOptions<span class="tsd-signature-symbol">: </span><a href="../interfaces/pickeroptions.html" class="tsd-signature-type">PickerOptions</a><span class="tsd-signature-symbol">; </span>settings<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">"customsource"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"inapp_browser"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#prefetchresponse" class="tsd-signature-type">PrefetchResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3729843/src/lib/api/prefetch.ts#L88">src/lib/api/prefetch.ts:88</a></li>
 							</ul>
-							<ul class="tsd-descriptions">
-								<li class="tsd-description">
-									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns filestack options from backend according to input params</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>events<span class="tsd-signature-symbol">: </span><a href="../enums/prefetchevents.html" class="tsd-signature-type">PrefetchEvents</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>permissions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">"enhance"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"intelligent_ingestion"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"whitelabel"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"transforms_ui"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"advanced_enhance"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>pickerOptions<span class="tsd-signature-symbol">: </span><a href="../interfaces/pickeroptions.html" class="tsd-signature-type">PickerOptions</a><span class="tsd-signature-symbol">; </span>settings<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">"customsource"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"inapp_browser"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>events<span class="tsd-signature-symbol">: </span><a href="../enums/prefetchevents.html" class="tsd-signature-type">PrefetchEvents</a><span class="tsd-signature-symbol">[]</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>permissions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">"enhance"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"intelligent_ingestion"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"whitelabel"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"transforms_ui"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"advanced_enhance"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>picker<wbr>Options<span class="tsd-signature-symbol">: </span><a href="../interfaces/pickeroptions.html" class="tsd-signature-type">PickerOptions</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>settings<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">"customsource"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"inapp_browser"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#prefetchresponse" class="tsd-signature-type">PrefetchResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
 			</section>
 		</section>
 		<footer>

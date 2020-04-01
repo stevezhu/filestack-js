@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FsTokenInterface | filestack-js</title>
+	<title>PrefetchRequest | filestack-js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2364,13 +2364,25 @@ img {
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class="current tsd-kind-interface">
-			<a href="fstokeninterface.html" class="tsd-kind-icon">Fs<wbr>Token<wbr>Interface</a>
+			<a href="prefetchrequest.html" class="tsd-kind-icon">Prefetch<wbr>Request</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="fstokeninterface.html#cancel" class="tsd-kind-icon">cancel</a>
+					<a href="prefetchrequest.html#apikey" class="tsd-kind-icon">apikey</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="fstokeninterface.html#getsource" class="tsd-kind-icon">get<wbr>Source</a>
+					<a href="prefetchrequest.html#events" class="tsd-kind-icon">events</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="prefetchrequest.html#permissions" class="tsd-kind-icon">permissions</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="prefetchrequest.html#picker_config" class="tsd-kind-icon">picker_<wbr>config</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="prefetchrequest.html#security" class="tsd-kind-icon">security</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="prefetchrequest.html#settings" class="tsd-kind-icon">settings</a>
 				</li>
 			</ul>
 		</li>
@@ -2382,14 +2394,8 @@ img {
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<span class="target">FsTokenInterface</span>
+					<span class="target">PrefetchRequest</span>
 				</li>
-			</ul>
-		</section>
-		<section class="tsd-panel">
-			<h3>Implemented by</h3>
-			<ul class="tsd-hierarchy">
-				<li><a href="../classes/fscanceltoken.html" class="tsd-signature-type">FsCancelToken</a></li>
 			</ul>
 		</section>
 		<section class="tsd-panel-group tsd-index-group">
@@ -2399,8 +2405,12 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fstokeninterface.html#cancel" class="tsd-kind-icon">cancel</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fstokeninterface.html#getsource" class="tsd-kind-icon">get<wbr>Source</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="prefetchrequest.html#apikey" class="tsd-kind-icon">apikey</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="prefetchrequest.html#events" class="tsd-kind-icon">events</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="prefetchrequest.html#permissions" class="tsd-kind-icon">permissions</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="prefetchrequest.html#picker_config" class="tsd-kind-icon">picker_<wbr>config</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="prefetchrequest.html#security" class="tsd-kind-icon">security</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="prefetchrequest.html#settings" class="tsd-kind-icon">settings</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2409,60 +2419,64 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="cancel" class="tsd-anchor"></a>
-				<h3>cancel</h3>
-				<div class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/filestackerror.html#error" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+				<a name="apikey" class="tsd-anchor"></a>
+				<h3>apikey</h3>
+				<div class="tsd-signature tsd-kind-icon">apikey<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3729843/src/lib/request/types.ts#L36">src/lib/request/types.ts:36</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3729843/src/lib/api/prefetch.ts#L53">src/lib/api/prefetch.ts:53</a></li>
 					</ul>
 				</aside>
-				<div class="tsd-type-declaration">
-					<h4>Type declaration</h4>
-					<ul class="tsd-parameters">
-						<li class="tsd-parameter-siganture">
-							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/filestackerror.html#error" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-							</ul>
-							<ul class="tsd-descriptions">
-								<li class="tsd-description">
-									<h4 class="tsd-parameters-title">Parameters</h4>
-									<ul class="tsd-parameters">
-										<li>
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> reason: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/filestackerror.html#error" class="tsd-signature-type">Error</a></h5>
-										</li>
-									</ul>
-									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="getsource" class="tsd-anchor"></a>
-				<h3>get<wbr>Source</h3>
-				<div class="tsd-signature tsd-kind-icon">get<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<a name="events" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> events</h3>
+				<div class="tsd-signature tsd-kind-icon">events<span class="tsd-signature-symbol">:</span> <a href="../enums/prefetchevents.html" class="tsd-signature-type">PrefetchEvents</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3729843/src/lib/request/types.ts#L37">src/lib/request/types.ts:37</a></li>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3729843/src/lib/api/prefetch.ts#L57">src/lib/api/prefetch.ts:57</a></li>
 					</ul>
 				</aside>
-				<div class="tsd-type-declaration">
-					<h4>Type declaration</h4>
-					<ul class="tsd-parameters">
-						<li class="tsd-parameter-siganture">
-							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-							</ul>
-							<ul class="tsd-descriptions">
-								<li class="tsd-description">
-									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-								</li>
-							</ul>
-						</li>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="permissions" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> permissions</h3>
+				<div class="tsd-signature tsd-kind-icon">permissions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">keyof </span><a href="../globals.html#prefetchpermissions" class="tsd-signature-type">PrefetchPermissions</a><span class="tsd-signature-symbol">&gt;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3729843/src/lib/api/prefetch.ts#L55">src/lib/api/prefetch.ts:55</a></li>
 					</ul>
-				</div>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="picker_config" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> picker_<wbr>config</h3>
+				<div class="tsd-signature tsd-kind-icon">picker_<wbr>config<span class="tsd-signature-symbol">:</span> <a href="pickeroptions.html" class="tsd-signature-type">PickerOptions</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3729843/src/lib/api/prefetch.ts#L58">src/lib/api/prefetch.ts:58</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="security" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> security</h3>
+				<div class="tsd-signature tsd-kind-icon">security<span class="tsd-signature-symbol">:</span> <a href="security.html" class="tsd-signature-type">Security</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3729843/src/lib/api/prefetch.ts#L54">src/lib/api/prefetch.ts:54</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="settings" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> settings</h3>
+				<div class="tsd-signature tsd-kind-icon">settings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">keyof </span><a href="../globals.html#prefetchsettings" class="tsd-signature-type">PrefetchSettings</a><span class="tsd-signature-symbol">&gt;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/filestack/filestack-js/blob/3729843/src/lib/api/prefetch.ts#L56">src/lib/api/prefetch.ts:56</a></li>
+					</ul>
+				</aside>
 			</section>
 		</section>
 		<footer>
